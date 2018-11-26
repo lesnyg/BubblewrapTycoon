@@ -8,9 +8,9 @@
     tools:layout_editor_absoluteY="81dp">
 
     <TextView
-        android:id="@+id/스트레스 지수"
+        android:id="@+id/textView"
         android:layout_width="269dp"
-        android:layout_height="62dp"
+        android:layout_height="44dp"
         android:layout_marginStart="52dp"
         android:layout_marginLeft="52dp"
         android:layout_marginTop="36dp"
@@ -25,17 +25,20 @@
 
     <ProgressBar
         android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="277dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginLeft="52dp"
-        android:layout_marginEnd="55dp"
-        android:layout_marginRight="55dp"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:progressBackgroundTint="#66ff33"
+        android:progressTint="#dd0000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/스트레스 지수" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <ImageButton
         android:id="@+id/btnBubble1"
@@ -47,6 +50,7 @@
         android:layout_marginEnd="52dp"
         android:layout_marginRight="52dp"
         app:layout_constraintEnd_toStartOf="@+id/btnBubble2"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/progressBar"
         app:srcCompat="@drawable/bubble" />
@@ -55,10 +59,12 @@
         android:id="@+id/btnBubble2"
         android:layout_width="67dp"
         android:layout_height="65dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toEndOf="@+id/btnBubble1"
         app:layout_constraintTop_toBottomOf="@+id/progressBar"
-        app:srcCompat="@drawable/bubble"
-        tools:layout_editor_absoluteX="159dp" />
+        app:srcCompat="@drawable/bubble" />
 
     <ImageButton
         android:id="@+id/btnBubble3"
@@ -70,6 +76,7 @@
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/btnBubble2"
         app:layout_constraintTop_toBottomOf="@+id/progressBar"
         app:srcCompat="@drawable/bubble" />
@@ -84,6 +91,7 @@
         android:layout_marginEnd="52dp"
         android:layout_marginRight="52dp"
         app:layout_constraintEnd_toStartOf="@+id/btnBubble5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnBubble1"
         app:srcCompat="@drawable/bubble" />
@@ -92,10 +100,12 @@
         android:id="@+id/btnBubble5"
         android:layout_width="67dp"
         android:layout_height="65dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
         android:layout_marginTop="30dp"
+        app:layout_constraintStart_toEndOf="@+id/btnBubble4"
         app:layout_constraintTop_toBottomOf="@+id/btnBubble2"
-        app:srcCompat="@drawable/bubble"
-        tools:layout_editor_absoluteX="159dp" />
+        app:srcCompat="@drawable/bubble" />
 
     <ImageButton
         android:id="@+id/btnBubble6"
@@ -122,6 +132,7 @@
         android:layout_marginEnd="52dp"
         android:layout_marginRight="52dp"
         app:layout_constraintEnd_toStartOf="@+id/btnBubble8"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnBubble4"
         app:srcCompat="@drawable/bubble" />
@@ -130,10 +141,12 @@
         android:id="@+id/btnBubble8"
         android:layout_width="67dp"
         android:layout_height="65dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
         android:layout_marginTop="30dp"
+        app:layout_constraintStart_toEndOf="@+id/btnBubble7"
         app:layout_constraintTop_toBottomOf="@+id/btnBubble5"
-        app:srcCompat="@drawable/bubble"
-        tools:layout_editor_absoluteX="159dp" />
+        app:srcCompat="@drawable/bubble" />
 
     <ImageButton
         android:id="@+id/btnBubble9"
@@ -145,13 +158,13 @@
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/btnBubble8"
         app:layout_constraintTop_toBottomOf="@+id/btnBubble6"
         app:srcCompat="@drawable/bubble" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnReset"
         android:layout_width="243dp"
         android:layout_height="53dp"
         android:layout_marginStart="70dp"
@@ -163,5 +176,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnBubble7" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="256dp"
+        android:layout_height="232dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="TextView"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
 
 </android.support.constraint.ConstraintLayout>
