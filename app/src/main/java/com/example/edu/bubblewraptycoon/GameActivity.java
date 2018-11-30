@@ -122,10 +122,10 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     public void run() {
                         imageboom1.setVisibility(View.GONE);
                         btnBubble1.setVisibility(View.VISIBLE);
-                        mp.stop();
+                       // mp.stop();
                     }
                 }, 2000);
-
+                mp.stop();
                 break;
             case R.id.btnBubble2:
                 sound();
@@ -136,10 +136,10 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     public void run() {
                         imageboom2.setVisibility(View.GONE);
                         btnBubble2.setVisibility(View.VISIBLE);
-                        mp.stop();
+                       // mp.stop();
                     }
                 }, 2000);
-
+                mp.stop();
                 break;
             case R.id.btnBubble3:
                 sound();
@@ -150,10 +150,10 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     public void run() {
                         imageboom3.setVisibility(View.GONE);
                         btnBubble3.setVisibility(View.VISIBLE);
-                        mp.stop();
+                        //mp.stop();
                     }
                 }, 2000);
-
+                mp.stop();
                 break;
             case R.id.btnBubble4:
                 sound();
@@ -164,10 +164,10 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     public void run() {
                         imageboom4.setVisibility(View.GONE);
                         btnBubble4.setVisibility(View.VISIBLE);
-                        mp.stop();
+                       // mp.stop();
                     }
                 }, 2000);
-
+                mp.stop();
                 break;
             case R.id.btnBubble5:
                 sound();
@@ -178,10 +178,10 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     public void run() {
                         imageboom5.setVisibility(View.GONE);
                         btnBubble5.setVisibility(View.VISIBLE);
-                        mp.stop();
+                       // mp.stop();
                     }
                 }, 2000);
-
+                mp.stop();
                 break;
             case R.id.btnBubble6:
                 sound();
@@ -192,9 +192,10 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     public void run() {
                         imageboom6.setVisibility(View.GONE);
                         btnBubble6.setVisibility(View.VISIBLE);
-                        mp.stop();
+                      //  mp.stop();
                     }
                 }, 2000);
+                mp.stop();
                 break;
             case R.id.btnBubble7:
                 sound();
@@ -205,10 +206,10 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     public void run() {
                         imageboom7.setVisibility(View.GONE);
                         btnBubble7.setVisibility(View.VISIBLE);
-                        mp.stop();
+                      //  mp.stop();
                     }
                 }, 2000);
-
+                mp.stop();
                 break;
             case R.id.btnBubble8:
                 sound();
@@ -219,10 +220,10 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     public void run() {
                         imageboom8.setVisibility(View.GONE);
                         btnBubble8.setVisibility(View.VISIBLE);
-                        mp.stop();
+                      //  mp.stop();
                     }
                 }, 2000);
-
+                mp.stop();
                 break;
             case R.id.btnBubble9:
                 sound();
@@ -233,10 +234,10 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     public void run() {
                         imageboom9.setVisibility(View.GONE);
                         btnBubble9.setVisibility(View.VISIBLE);
-                        mp.stop();
+                      //  mp.stop();
                     }
                 }, 2000);
-
+                mp.stop();
                 break;
 
         }
