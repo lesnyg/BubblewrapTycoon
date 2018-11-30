@@ -115,8 +115,8 @@
 
     <ImageButton
         android:id="@+id/btnBubble5"
-        android:layout_width="76dp"
-        android:layout_height="77dp"
+        android:layout_width="79dp"
+        android:layout_height="76dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="244dp"
@@ -150,11 +150,11 @@
 
     <ImageButton
         android:id="@+id/btnBubble7"
-        android:layout_width="79dp"
-        android:layout_height="71dp"
+        android:layout_width="78dp"
+        android:layout_height="72dp"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="348dp"
+        android:layout_marginTop="350dp"
         android:layout_marginEnd="52dp"
         android:layout_marginRight="52dp"
         android:background="@android:color/transparent"
@@ -186,8 +186,8 @@
 
     <ImageButton
         android:id="@+id/btnBubble9"
-        android:layout_width="74dp"
-        android:layout_height="78dp"
+        android:layout_width="76dp"
+        android:layout_height="74dp"
         android:layout_marginStart="52dp"
         android:layout_marginLeft="52dp"
         android:layout_marginTop="348dp"
@@ -197,7 +197,7 @@
         android:scaleType="fitXY"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.625"
         app:layout_constraintStart_toEndOf="@+id/btnBubble8"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/bubble" />
@@ -272,12 +272,12 @@
         android:layout_height="74dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="138dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintHorizontal_bias="0.908"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/boom3" />
@@ -324,7 +324,7 @@
         android:layout_marginRight="8dp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintHorizontal_bias="0.908"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/boom3" />
@@ -363,8 +363,8 @@
 
     <ImageView
         android:id="@+id/imageboom9"
-        android:layout_width="83dp"
-        android:layout_height="74dp"
+        android:layout_width="79dp"
+        android:layout_height="72dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="348dp"
@@ -372,7 +372,7 @@
         android:layout_marginRight="8dp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintHorizontal_bias="0.91"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/boom3" />
