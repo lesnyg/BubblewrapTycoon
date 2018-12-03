@@ -61,6 +61,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         imageboom8 = findViewById(R.id.imageboom8);
         imageboom9 = findViewById(R.id.imageboom9);
 
+        mp = new MediaPlayer().create(this, R.raw.bubble3);
 
     }
 
@@ -264,9 +265,9 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
+    MediaPlayer mp = null;
     public void sound() {
-        MediaPlayer mp = null;
-        mp = new MediaPlayer().create(this, R.raw.bubble3);
+        if(mp.isPlaying()) mp.stop();
         mp.start();
     }
 
