@@ -18,7 +18,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     int count = 0, result;
     Button btnReset;
     TextView textViewResult;
-    MediaPlayer mp;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,7 +69,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         final Handler handler = new Handler();
 
         if (v == btnReset) {
-            count = 0;
+            count = Integer.parseInt(null);
             progressBar.setProgress(20);
             textViewResult.setVisibility(View.GONE);
             btnBubble1.setEnabled(true);
@@ -122,7 +122,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     public void run() {
                         imageboom1.setVisibility(View.GONE);
                         btnBubble1.setVisibility(View.VISIBLE);
-                        mp.stop();
+//                        mp.stop();
 //                        mp.release();
 //                        mp=null;
                     }
@@ -138,7 +138,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     public void run() {
                         imageboom2.setVisibility(View.GONE);
                         btnBubble2.setVisibility(View.VISIBLE);
-                        mp.stop();
+//                        mp.stop();
 //                        mp.release();
 //                        mp=null;
                     }
@@ -154,7 +154,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     public void run() {
                         imageboom3.setVisibility(View.GONE);
                         btnBubble3.setVisibility(View.VISIBLE);
-                        mp.stop();
+//                        mp.stop();
 //                        mp.release();
 //                        mp=null;
                     }
@@ -170,7 +170,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     public void run() {
                         imageboom4.setVisibility(View.GONE);
                         btnBubble4.setVisibility(View.VISIBLE);
-                        mp.stop();
+ //                       mp.stop();
 //                        mp.release();
 //                        mp=null;
                     }
@@ -186,7 +186,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     public void run() {
                         imageboom5.setVisibility(View.GONE);
                         btnBubble5.setVisibility(View.VISIBLE);
-                        mp.stop();
+ //                       mp.stop();
 //                        mp.release();
 //                        mp=null;
                     }
@@ -202,7 +202,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     public void run() {
                         imageboom6.setVisibility(View.GONE);
                         btnBubble6.setVisibility(View.VISIBLE);
-                        mp.stop();
+  //                      mp.stop();
 //                        mp.release();
 //                        mp=null;
                     }
@@ -218,7 +218,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     public void run() {
                         imageboom7.setVisibility(View.GONE);
                         btnBubble7.setVisibility(View.VISIBLE);
-                        mp.stop();
+//                        mp.stop();
 //                        mp.release();
 //                        mp=null;
                     }
@@ -234,7 +234,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     public void run() {
                         imageboom8.setVisibility(View.GONE);
                         btnBubble8.setVisibility(View.VISIBLE);
-                        mp.stop();
+ //                       mp.stop();
 //                        mp.release();
 //                        mp=null;
                     }
@@ -250,12 +250,12 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     public void run() {
                         imageboom9.setVisibility(View.GONE);
                         btnBubble9.setVisibility(View.VISIBLE);
-                        mp.stop();
+                        //mp.stop();
 //                        mp.release();
 //                        mp=null;
                     }
                 }, 2000);
-                //mp.stop();
+//                mp.stop();
                 break;
 
         }
@@ -265,6 +265,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
 
 
     public void sound() {
+        MediaPlayer mp = null;
         mp = new MediaPlayer().create(this, R.raw.bubble3);
         mp.start();
     }
